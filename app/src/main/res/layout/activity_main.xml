@@ -31,27 +31,22 @@
             android:layout_height="70dp"
             android:src="@drawable/stick_figure"
             android:scaleType="fitCenter"
+            android:layout_weight="1"
             style="?android:attr/borderlessButtonStyle"
             android:id="@+id/imageButton" />
-
         <ImageButton
             android:layout_width="70dp"
             android:layout_height="70dp"
-            android:src="@drawable/settings"
-            android:scaleType="centerCrop"
-            style="?android:attr/borderlessButtonStyle"
-            android:id="@+id/imageButton2" />
-        <ImageButton
-            android:layout_width="70dp"
-            android:layout_height="70dp"
-            android:src="@drawable/settings"
+            android:src="@drawable/camera"
+            android:layout_weight="1"
             android:scaleType="centerCrop"
             style="?android:attr/borderlessButtonStyle"
             android:id="@+id/imageButton3" />
         <ImageButton
             android:layout_width="70dp"
             android:layout_height="70dp"
-            android:src="@drawable/settings"
+            android:src="@drawable/chart"
+            android:layout_weight="1"
             android:scaleType="centerCrop"
             style="?android:attr/borderlessButtonStyle"
             android:id="@+id/imageButton4" />
@@ -60,6 +55,7 @@
             android:layout_width="70dp"
             android:layout_height="70dp"
             android:src="@drawable/settings"
+            android:layout_weight="1"
             android:scaleType="centerCrop"
             style="?android:attr/borderlessButtonStyle"
             android:id="@+id/imageButton5" />

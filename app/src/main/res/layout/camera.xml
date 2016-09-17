@@ -1,6 +1,48 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#e53935"
+        android:textAllCaps="true"
+        android:layout_marginStart="12dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="18dp"
+        android:textSize="12sp"
+        android:text="Take Grain Images"/>
+
+    <ImageButton
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:src="@drawable/wheat"
+        android:scaleType="center"
+        android:id="@+id/imageButton2"
+        android:layout_marginBottom="18dp"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_weight="1"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#e53935"
+        android:textAllCaps="true"
+        android:layout_marginStart="12dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginBottom="18dp"
+        android:textSize="12sp"
+        android:text="Take Crop Images"/>
+
+    <ImageButton
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        style="?android:attr/borderlessButtonStyle"
+        android:id="@+id/imageButton3"
+        android:src="@drawable/crop"
+        android:layout_weight="1"/>
 
 </LinearLayout>

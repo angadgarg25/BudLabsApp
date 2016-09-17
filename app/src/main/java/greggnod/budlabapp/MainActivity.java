@@ -25,6 +25,14 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.camera);
     }
 
+    public void viewToMain(View view) {
+        setContentView(R.layout.activity_main);
+    }
+
+    public void onBackPressed() {
+        setContentView(R.layout.activity_main);
+    }
+
     public void cropCameraIntent(View view){
         double latitude, longitude;
         try{

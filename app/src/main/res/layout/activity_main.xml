@@ -46,7 +46,7 @@
             android:scaleType="centerCrop"
             style="?android:attr/borderlessButtonStyle"
             android:id="@+id/imageButton3"
-            android:onClick="viewToCamera"/>
+            android:onClick="pickImage"/>
         <ImageButton
             android:layout_width="70dp"
             android:layout_height="70dp"
@@ -54,7 +54,8 @@
             android:layout_weight="1"
             android:scaleType="centerCrop"
             style="?android:attr/borderlessButtonStyle"
-            android:id="@+id/imageButton4" />
+            android:id="@+id/imageButton4"
+            android:onClick="toImageComparison"/>
 
         <ImageButton
             android:layout_width="70dp"
@@ -105,4 +106,5 @@
             android:layout_weight="1"
             android:id="@+id/textView4" />
     </LinearLayout>
+
 </RelativeLayout>

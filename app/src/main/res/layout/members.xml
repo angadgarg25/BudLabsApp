@@ -59,7 +59,7 @@
             <Button
                 android:layout_width="55dp"
                 android:layout_height="wrap_content"
-                android:text="add"
+                android:text="ADD"
                 android:id="@+id/addTaskBtn"
                 style="?android:attr/borderlessButtonStyle"
                 android:textColor="#e57373"

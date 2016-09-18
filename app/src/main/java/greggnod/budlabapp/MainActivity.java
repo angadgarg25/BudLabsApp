@@ -38,8 +38,8 @@ public class MainActivity extends AppCompatActivity {
         try{
             LocationManager locationManager = (LocationManager)getSystemService(Context.LOCATION_SERVICE);
             Location location = locationManager.getLastKnownLocation(LocationManager.GPS_PROVIDER);
-            //latitude = location.getLatitude();
-            //longitude = location.getLongitude();
+            latitude = location.getLatitude();
+            longitude = location.getLongitude();
         } catch (SecurityException e) {}
         Intent takePictureIntent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
         if (takePictureIntent.resolveActivity(getPackageManager()) != null) {

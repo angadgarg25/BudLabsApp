@@ -1,14 +1,10 @@
 package greggnod.budlabapp;
 
-import android.Manifest;
 import android.content.Context;
 import android.content.Intent;
-import android.content.pm.PackageManager;
 import android.location.Location;
 import android.location.LocationManager;
 import android.provider.MediaStore;
-import android.support.v4.app.ActivityCompat;
-import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -42,8 +38,8 @@ public class MainActivity extends AppCompatActivity {
         try{
             LocationManager locationManager = (LocationManager)getSystemService(Context.LOCATION_SERVICE);
             Location location = locationManager.getLastKnownLocation(LocationManager.GPS_PROVIDER);
-            latitude = location.getLatitude();
-            longitude = location.getLongitude();
+            //latitude = location.getLatitude();
+            //longitude = location.getLongitude();
         } catch (SecurityException e) {}
         Intent takePictureIntent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
         if (takePictureIntent.resolveActivity(getPackageManager()) != null) {
@@ -53,15 +49,12 @@ public class MainActivity extends AppCompatActivity {
 
     public void grainCameraIntent(View view){
         double latitude, longitude;
-
-        try {
-            LocationManager locationManager = (LocationManager) this.getSystemService(Context.LOCATION_SERVICE);
+        try{
+            LocationManager locationManager = (LocationManager)this.getSystemService(Context.LOCATION_SERVICE);
             Location location = locationManager.getLastKnownLocation(LocationManager.GPS_PROVIDER);
             //latitude = location.getLatitude();
             //longitude = location.getLongitude();
-        } catch (SecurityException e){
-        }
-
+        } catch (SecurityException e){}
 
         Intent takePictureIntent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
         if (takePictureIntent.resolveActivity(getPackageManager()) != null) {

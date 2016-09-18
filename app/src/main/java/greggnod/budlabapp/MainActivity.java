@@ -50,7 +50,7 @@ public class MainActivity extends AppCompatActivity {
     public void grainCameraIntent(View view){
         double latitude, longitude;
         try{
-            LocationManager locationManager = (LocationManager)getSystemService(Context.LOCATION_SERVICE);
+            LocationManager locationManager = (LocationManager)this.getSystemService(Context.LOCATION_SERVICE);
             Location location = locationManager.getLastKnownLocation(LocationManager.GPS_PROVIDER);
             //latitude = location.getLatitude();
             //longitude = location.getLongitude();
